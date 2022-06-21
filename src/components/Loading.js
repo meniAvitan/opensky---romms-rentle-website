@@ -23,11 +23,11 @@ export default class Loading extends React.Component {
        return(
         <Section >
             <Loader
-            type="Grid"
+            type="Puff"
             color="#00BFFF"
             height={100}
             width={100}
-            timeout={10000} //3 secs
+            timeout={8000} //3 secs
     
             />
         </Section>   
