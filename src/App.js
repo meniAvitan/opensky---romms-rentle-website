@@ -29,6 +29,8 @@ import call from "./images/call.png";
 import GalleryFour from "./pages/GalleryFour";
 import { ScrollToTop } from "./components/ScrollToTop";
 import TagManager from "react-gtm-module";
+import Loading from "./components/Loading";
+
 
 const tagManagerArgs = {
   gtmId: "GTM-TZWCJ4P",
@@ -117,6 +119,8 @@ const ContactFixed = styled.div`
   }
 `;
 
+
+
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -125,9 +129,11 @@ const App = () => {
 
   return (
     <>
+    
       <HashRouter>
         <React.Fragment>
           <GlobalStyle />
+          <Loading />
           <Navbar toggle={toggle} />{" "}
           <Dropdown isOpen={isOpen} toggle={toggle} /> <ScrollToTop />
           <ContactFixed>
@@ -160,6 +166,7 @@ const App = () => {
           </Switch>{" "}
           <Recommendations recommends={RecommendData} /> <Map />
           <Contact />
+          
           <Footer />
         </React.Fragment>{" "}
       </HashRouter>{" "}

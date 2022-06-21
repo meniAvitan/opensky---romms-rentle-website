@@ -161,28 +161,7 @@ constructor(props){
    }
 
 
-    // submitHandler = (e) =>{
-    //     e.preventDefault();
-    //     console.log(this.state);
-       
-    //     axios.post('/api/form', this.state)
-    //     .then(res => {
-    //         this.resetForm()
-    //         console.log(res);
-           
-    //         const MySwal = withReactContent(Swal);
-    //         MySwal.fire({   
-    //             didOpen: () => {
-    //               MySwal.clickConfirm()
-    //             }
-    //           }).then(() => {
-    //             return MySwal.fire(<p style={{letterSpacing: '3px', fontSize: '2rem'}}>הפניה נשלחה בהצלחה</p>)
-    //           });
-            
-    //     }).catch(()=>{
-    //         console.log('message not sent');  
-    //     });
-    // }
+
 
     resetForm = () =>{
         this.setState({
@@ -201,12 +180,10 @@ constructor(props){
         
         <Section dir="rtl" id="contact" >
             <Container 
-                data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom"
             >
                 <h1>צור איתנו קשר</h1>
                 <ContactForm>
-                    <form method="POST"  action="https://formsubmit.co/m.avitan053@gmail.com">
+                    <form method="POST"  action="https://formsubmit.co/opensky.zefat@gmail.com">
                     <input type="hidden" name="_subject" value="פניה חדשה - שמים פתוחים"/>
                    
                     <input type="hidden" name="_captcha" value="false"/>
