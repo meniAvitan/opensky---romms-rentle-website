@@ -7,7 +7,6 @@ const Section = styled.section`
 position:absolute;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.3) !important;
 z-index: 2;
     padding-top: 3rem;
     display: flex;
