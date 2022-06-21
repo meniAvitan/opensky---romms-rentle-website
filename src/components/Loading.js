@@ -4,11 +4,11 @@ import Loader from 'react-loader-spinner';
 import styled from 'styled-components';
 
 const Section = styled.section`
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.3) !important;
+z-index: 2;
     padding-top: 3rem;
     display: flex;
     justify-content: center;

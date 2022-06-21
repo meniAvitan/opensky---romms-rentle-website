@@ -185,7 +185,7 @@ constructor(props){
                 <ContactForm>
                     <form method="POST"  action="https://formsubmit.co/opensky.zefat@gmail.com">
                     <input type="hidden" name="_subject" value="פניה חדשה - שמים פתוחים"/>
-                   
+                    <input type="hidden" name="_next" value="https://www.opensky-zefat.com/thankYou.html"/>
                     <input type="hidden" name="_captcha" value="false"/>
                         
                         <input 
