@@ -148,21 +148,11 @@ const App = () => {
           <InfoSection {...InfoData} /> <InfoDetails />
           <Rooms rooms={RoomsImage} />{" "}
           <Switch>
-            <Route path="/roomOne" component={GalleryOne}>
-              {" "}
-            </Route>{" "}
-            <Route path="/roomTwo" component={GalleryTwo}>
-              {" "}
-            </Route>{" "}
-            <Route path="/roomThree" component={GalleryThree}>
-              {" "}
-            </Route>{" "}
-            <Route path="/roomFour" component={GalleryFour}>
-              {" "}
-            </Route>{" "}
-            <Route path="/lobby" component={Lobby}>
-              {" "}
-            </Route>{" "}
+            <Route path="/roomOne" component={GalleryOne}/>
+            <Route path="/roomTwo" component={GalleryTwo}/>
+            <Route path="/roomThree" component={GalleryThree}/>
+            <Route path="/roomFour" component={GalleryFour}/>
+            <Route path="/lobby" component={Lobby}/>
           </Switch>{" "}
           <Recommendations recommends={RecommendData} /> <Map />
           <Contact />
